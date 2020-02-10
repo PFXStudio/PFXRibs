@@ -65,7 +65,8 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
     private var targetViewController: ViewControllable?
     // 애니메이션 체크 변수.
     private var animationInProgress = false
-    // 화면 이동 함수.
+    // 이동 할 화면은 모두 팝업 형택로 띄우게 작성 되어 있다.
+    // 만약 전체 화면 속성으로 띄우고 싶은 경우 어디에서 설정 해 주어야 하는가?
     private func presentTargetViewController() {
         if let targetViewController = targetViewController {
             animationInProgress = true

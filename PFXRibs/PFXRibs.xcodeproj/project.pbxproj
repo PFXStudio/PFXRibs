@@ -19,11 +19,6 @@
 		D209CE3023F0EDAD00E4C231 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE2C23F0EDAD00E4C231 /* LoggedOutBuilder.swift */; };
 		D209CE3123F0EDAD00E4C231 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE2D23F0EDAD00E4C231 /* LoggedOutInteractor.swift */; };
 		D209CE3323F13A0A00E4C231 /* RootComponent+LoggedOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE3223F13A0A00E4C231 /* RootComponent+LoggedOut.swift */; };
-		D228BB2923F03C2A004189AB /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228BB2423F03C2A004189AB /* HomeRouter.swift */; };
-		D228BB2A23F03C2A004189AB /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D228BB2523F03C2A004189AB /* HomeViewController.storyboard */; };
-		D228BB2B23F03C2A004189AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228BB2623F03C2A004189AB /* HomeViewController.swift */; };
-		D228BB2C23F03C2A004189AB /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228BB2723F03C2A004189AB /* HomeBuilder.swift */; };
-		D228BB2D23F03C2A004189AB /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228BB2823F03C2A004189AB /* HomeInteractor.swift */; };
 		D2D7C3EF23F03B700084462D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7C3EE23F03B700084462D /* AppDelegate.swift */; };
 		D2D7C3F323F03B700084462D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7C3F223F03B700084462D /* ViewController.swift */; };
 		D2D7C3F623F03B700084462D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D7C3F423F03B700084462D /* Main.storyboard */; };
@@ -69,11 +64,6 @@
 		D209CE2C23F0EDAD00E4C231 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
 		D209CE2D23F0EDAD00E4C231 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
 		D209CE3223F13A0A00E4C231 /* RootComponent+LoggedOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedOut.swift"; sourceTree = "<group>"; };
-		D228BB2423F03C2A004189AB /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		D228BB2523F03C2A004189AB /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
-		D228BB2623F03C2A004189AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D228BB2723F03C2A004189AB /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
-		D228BB2823F03C2A004189AB /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D2D7C3EB23F03B700084462D /* PFXRibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFXRibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D7C3EE23F03B700084462D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2D7C3F223F03B700084462D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,18 +156,6 @@
 			path = LoggedOut;
 			sourceTree = "<group>";
 		};
-		D228BB2323F03C0A004189AB /* HomeRib */ = {
-			isa = PBXGroup;
-			children = (
-				D228BB2423F03C2A004189AB /* HomeRouter.swift */,
-				D228BB2523F03C2A004189AB /* HomeViewController.storyboard */,
-				D228BB2623F03C2A004189AB /* HomeViewController.swift */,
-				D228BB2723F03C2A004189AB /* HomeBuilder.swift */,
-				D228BB2823F03C2A004189AB /* HomeInteractor.swift */,
-			);
-			path = HomeRib;
-			sourceTree = "<group>";
-		};
 		D2D7C3E223F03B700084462D = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +184,6 @@
 				D209CE2623F0ECBD00E4C231 /* AppStart */,
 				D209CE2923F0ED9200E4C231 /* LoggedOut */,
 				D209CE1B23F0EBAD00E4C231 /* RootRib */,
-				D228BB2323F03C0A004189AB /* HomeRib */,
 				D2D7C3F223F03B700084462D /* ViewController.swift */,
 				D2D7C3F423F03B700084462D /* Main.storyboard */,
 				D2D7C3FA23F03B710084462D /* Assets.xcassets */,
@@ -354,7 +331,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D228BB2A23F03C2A004189AB /* HomeViewController.storyboard in Resources */,
 				D2D7C3FE23F03B710084462D /* LaunchScreen.storyboard in Resources */,
 				D2D7C3FB23F03B710084462D /* Assets.xcassets in Resources */,
 				D2D7C3F623F03B700084462D /* Main.storyboard in Resources */,
@@ -496,12 +472,8 @@
 				D209CE2823F0ECD200E4C231 /* AppComponent.swift in Sources */,
 				D209CE3323F13A0A00E4C231 /* RootComponent+LoggedOut.swift in Sources */,
 				D209CE3123F0EDAD00E4C231 /* LoggedOutInteractor.swift in Sources */,
-				D228BB2D23F03C2A004189AB /* HomeInteractor.swift in Sources */,
 				D209CE2523F0EBBF00E4C231 /* RootInteractor.swift in Sources */,
 				D209CE2123F0EBBF00E4C231 /* RootRouter.swift in Sources */,
-				D228BB2C23F03C2A004189AB /* HomeBuilder.swift in Sources */,
-				D228BB2923F03C2A004189AB /* HomeRouter.swift in Sources */,
-				D228BB2B23F03C2A004189AB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

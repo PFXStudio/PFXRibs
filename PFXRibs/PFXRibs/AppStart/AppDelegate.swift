@@ -26,10 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
 
+        // AppComponent 의존성 관리 객체를 생성하여 RootBuilder를 생성하면서 AppComponent 의존성을 주입한다.
         let result = RootBuilder(dependency: AppComponent()).build()
         let launchRouter = result.launchRouter
         self.launchRouter = launchRouter
+        // launchRouter에 핸들러를 참조시킨다.
         urlHandler = result.urlHandler
+        // 시작화면을 띄운다.
         launchRouter.launchFromWindow(window)
 
         return true

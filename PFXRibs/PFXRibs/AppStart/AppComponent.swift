@@ -9,6 +9,7 @@
 import Foundation
 import RIBs
 
+// 의존성 관리 객체
 class AppComponent: Component<EmptyDependency>, RootDependency {
     init() {
         super.init(dependency: EmptyComponent())

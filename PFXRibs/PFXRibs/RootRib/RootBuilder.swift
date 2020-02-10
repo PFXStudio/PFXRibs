@@ -42,15 +42,20 @@ final class RootBuilder: Builder<RootDependency>, RootBuildable {
     override init(dependency: RootDependency) {
         super.init(dependency: dependency)
     }
-
+    // 생성 함수, 리턴 값은 LaunchRouting, UrlHandler.
+    // LaunchRouting 라우터, UrlHandler는 외부로 부턴 openUrl 호출이 들어 올 경우 handler 사용
     func build() -> (launchRouter: LaunchRouting, urlHandler: UrlHandler) {
+        // 콘트롤러 객체 생성
         let viewController = RootViewController()
+        // 의존성 관리 객체 생성
         let component = RootComponent(dependency: dependency,
                                       rootViewController: viewController)
+        // 비즈니스 로직 관리 객체 생성
         let interactor = RootInteractor(presenter: viewController)
-
+        
+        // LoggedOutBuilder 생성 시 의존성을 주어 생성
         let loggedOutBuilder = LoggedOutBuilder(dependency: component)
-//        let loggedInBuilder = LoggedInBuilder(dependency: component)
+        // 라우터 객체 생성
         let router = RootRouter(interactor: interactor,
                                 viewController: viewController,
                                 loggedOutBuilder: loggedOutBuilder)
