@@ -17,6 +17,7 @@ target 'PFXRibs' do
   pod 'Hero'
   pod 'NVActivityIndicatorView'
   pod 'RIBs'
+  pod 'SnapKit'
 
   target 'PFXRibsTests' do
     inherit! :search_paths

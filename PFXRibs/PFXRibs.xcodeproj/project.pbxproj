@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		15F77E4305C364B796D3C78E /* Pods_PFXRibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F10F61127839BAF7FC3073 /* Pods_PFXRibs.framework */; };
 		95C3CF73400FD9738DB3D5B7 /* Pods_PFXRibsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A132A597F58A2ADD13822546 /* Pods_PFXRibsTests.framework */; };
+		D209CE2123F0EBBF00E4C231 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE1C23F0EBBF00E4C231 /* RootRouter.swift */; };
+		D209CE2323F0EBBF00E4C231 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE1E23F0EBBF00E4C231 /* RootViewController.swift */; };
+		D209CE2423F0EBBF00E4C231 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE1F23F0EBBF00E4C231 /* RootBuilder.swift */; };
+		D209CE2523F0EBBF00E4C231 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE2023F0EBBF00E4C231 /* RootInteractor.swift */; };
+		D209CE2823F0ECD200E4C231 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE2723F0ECD200E4C231 /* AppComponent.swift */; };
+		D209CE2E23F0EDAD00E4C231 /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE2A23F0EDAD00E4C231 /* LoggedOutRouter.swift */; };
+		D209CE2F23F0EDAD00E4C231 /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE2B23F0EDAD00E4C231 /* LoggedOutViewController.swift */; };
+		D209CE3023F0EDAD00E4C231 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE2C23F0EDAD00E4C231 /* LoggedOutBuilder.swift */; };
+		D209CE3123F0EDAD00E4C231 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE2D23F0EDAD00E4C231 /* LoggedOutInteractor.swift */; };
+		D209CE3323F13A0A00E4C231 /* RootComponent+LoggedOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209CE3223F13A0A00E4C231 /* RootComponent+LoggedOut.swift */; };
 		D228BB2923F03C2A004189AB /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228BB2423F03C2A004189AB /* HomeRouter.swift */; };
 		D228BB2A23F03C2A004189AB /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D228BB2523F03C2A004189AB /* HomeViewController.storyboard */; };
 		D228BB2B23F03C2A004189AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228BB2623F03C2A004189AB /* HomeViewController.swift */; };
 		D228BB2C23F03C2A004189AB /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228BB2723F03C2A004189AB /* HomeBuilder.swift */; };
 		D228BB2D23F03C2A004189AB /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228BB2823F03C2A004189AB /* HomeInteractor.swift */; };
 		D2D7C3EF23F03B700084462D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7C3EE23F03B700084462D /* AppDelegate.swift */; };
-		D2D7C3F123F03B700084462D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7C3F023F03B700084462D /* SceneDelegate.swift */; };
 		D2D7C3F323F03B700084462D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7C3F223F03B700084462D /* ViewController.swift */; };
 		D2D7C3F623F03B700084462D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D7C3F423F03B700084462D /* Main.storyboard */; };
 		D2D7C3F923F03B700084462D /* PFXRibs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2D7C3F723F03B700084462D /* PFXRibs.xcdatamodeld */; };
@@ -50,6 +59,16 @@
 		54C8F028752B752E99B5AB20 /* Pods-PFXRibs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PFXRibs.debug.xcconfig"; path = "Target Support Files/Pods-PFXRibs/Pods-PFXRibs.debug.xcconfig"; sourceTree = "<group>"; };
 		A132A597F58A2ADD13822546 /* Pods_PFXRibsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PFXRibsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91772DDBCE3704391477144 /* Pods-PFXRibsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PFXRibsTests.debug.xcconfig"; path = "Target Support Files/Pods-PFXRibsTests/Pods-PFXRibsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D209CE1C23F0EBBF00E4C231 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		D209CE1E23F0EBBF00E4C231 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		D209CE1F23F0EBBF00E4C231 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		D209CE2023F0EBBF00E4C231 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		D209CE2723F0ECD200E4C231 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		D209CE2A23F0EDAD00E4C231 /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
+		D209CE2B23F0EDAD00E4C231 /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
+		D209CE2C23F0EDAD00E4C231 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
+		D209CE2D23F0EDAD00E4C231 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
+		D209CE3223F13A0A00E4C231 /* RootComponent+LoggedOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedOut.swift"; sourceTree = "<group>"; };
 		D228BB2423F03C2A004189AB /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		D228BB2523F03C2A004189AB /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		D228BB2623F03C2A004189AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +76,6 @@
 		D228BB2823F03C2A004189AB /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D2D7C3EB23F03B700084462D /* PFXRibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFXRibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D7C3EE23F03B700084462D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2D7C3F023F03B700084462D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D2D7C3F223F03B700084462D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2D7C3F523F03B700084462D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2D7C3F823F03B700084462D /* PFXRibs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PFXRibs.xcdatamodel; sourceTree = "<group>"; };
@@ -116,6 +134,38 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D209CE1B23F0EBAD00E4C231 /* RootRib */ = {
+			isa = PBXGroup;
+			children = (
+				D209CE1C23F0EBBF00E4C231 /* RootRouter.swift */,
+				D209CE1E23F0EBBF00E4C231 /* RootViewController.swift */,
+				D209CE1F23F0EBBF00E4C231 /* RootBuilder.swift */,
+				D209CE2023F0EBBF00E4C231 /* RootInteractor.swift */,
+				D209CE3223F13A0A00E4C231 /* RootComponent+LoggedOut.swift */,
+			);
+			path = RootRib;
+			sourceTree = "<group>";
+		};
+		D209CE2623F0ECBD00E4C231 /* AppStart */ = {
+			isa = PBXGroup;
+			children = (
+				D2D7C3EE23F03B700084462D /* AppDelegate.swift */,
+				D209CE2723F0ECD200E4C231 /* AppComponent.swift */,
+			);
+			path = AppStart;
+			sourceTree = "<group>";
+		};
+		D209CE2923F0ED9200E4C231 /* LoggedOut */ = {
+			isa = PBXGroup;
+			children = (
+				D209CE2A23F0EDAD00E4C231 /* LoggedOutRouter.swift */,
+				D209CE2B23F0EDAD00E4C231 /* LoggedOutViewController.swift */,
+				D209CE2C23F0EDAD00E4C231 /* LoggedOutBuilder.swift */,
+				D209CE2D23F0EDAD00E4C231 /* LoggedOutInteractor.swift */,
+			);
+			path = LoggedOut;
+			sourceTree = "<group>";
+		};
 		D228BB2323F03C0A004189AB /* HomeRib */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,9 +203,10 @@
 		D2D7C3ED23F03B700084462D /* PFXRibs */ = {
 			isa = PBXGroup;
 			children = (
+				D209CE2623F0ECBD00E4C231 /* AppStart */,
+				D209CE2923F0ED9200E4C231 /* LoggedOut */,
+				D209CE1B23F0EBAD00E4C231 /* RootRib */,
 				D228BB2323F03C0A004189AB /* HomeRib */,
-				D2D7C3EE23F03B700084462D /* AppDelegate.swift */,
-				D2D7C3F023F03B700084462D /* SceneDelegate.swift */,
 				D2D7C3F223F03B700084462D /* ViewController.swift */,
 				D2D7C3F423F03B700084462D /* Main.storyboard */,
 				D2D7C3FA23F03B710084462D /* Assets.xcassets */,
@@ -434,12 +485,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D209CE2E23F0EDAD00E4C231 /* LoggedOutRouter.swift in Sources */,
+				D209CE2423F0EBBF00E4C231 /* RootBuilder.swift in Sources */,
+				D209CE3023F0EDAD00E4C231 /* LoggedOutBuilder.swift in Sources */,
+				D209CE2323F0EBBF00E4C231 /* RootViewController.swift in Sources */,
 				D2D7C3F323F03B700084462D /* ViewController.swift in Sources */,
 				D2D7C3EF23F03B700084462D /* AppDelegate.swift in Sources */,
+				D209CE2F23F0EDAD00E4C231 /* LoggedOutViewController.swift in Sources */,
 				D2D7C3F923F03B700084462D /* PFXRibs.xcdatamodeld in Sources */,
+				D209CE2823F0ECD200E4C231 /* AppComponent.swift in Sources */,
+				D209CE3323F13A0A00E4C231 /* RootComponent+LoggedOut.swift in Sources */,
+				D209CE3123F0EDAD00E4C231 /* LoggedOutInteractor.swift in Sources */,
 				D228BB2D23F03C2A004189AB /* HomeInteractor.swift in Sources */,
+				D209CE2523F0EBBF00E4C231 /* RootInteractor.swift in Sources */,
+				D209CE2123F0EBBF00E4C231 /* RootRouter.swift in Sources */,
 				D228BB2C23F03C2A004189AB /* HomeBuilder.swift in Sources */,
-				D2D7C3F123F03B700084462D /* SceneDelegate.swift in Sources */,
 				D228BB2923F03C2A004189AB /* HomeRouter.swift in Sources */,
 				D228BB2B23F03C2A004189AB /* HomeViewController.swift in Sources */,
 			);
@@ -546,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -600,7 +660,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -618,6 +678,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7HRPNLU6RA;
 				INFOPLIST_FILE = PFXRibs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7HRPNLU6RA;
 				INFOPLIST_FILE = PFXRibs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
