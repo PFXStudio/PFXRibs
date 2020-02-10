@@ -7,6 +7,7 @@
 //
 
 import RIBs
+import RxSwift
 
 // Interactor 프로토콜 정의
 protocol LoggedOutInteractable: Interactable {
@@ -28,5 +29,8 @@ final class LoggedOutRouter: ViewableRouter<LoggedOutInteractable, LoggedOutView
         super.init(interactor: interactor, viewController: viewController)
         // interactor에게 라우터 객체를 참조 시킨다.
         interactor.router = self
+        
+        let value = Observable<Int>()
+        value.
     }
 }

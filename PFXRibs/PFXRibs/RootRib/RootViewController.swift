@@ -31,6 +31,7 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
         fatalError("Method is not supported")
     }
 
+    // viewcontroller 생명주기
     override func viewDidLoad() {
         super.viewDidLoad()
 
