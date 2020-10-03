@@ -9,13 +9,24 @@
 import RIBs
 import RxSwift
 
-// 라우터에 호출이 필요 할 경우 LoggedOutRouting 프로토콜에 정의 해서 전달한다.
+// 인터랙터에서 라우터로 통신을 하기 위한 프로토콜, 라우터에서 기능 구현을 해야 함
 protocol LoggedOutRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    func messageToRouter(message: String)
+}
+
+extension LoggedOutRouting {
+    // 공부 중..
+    func messageToRouter(message: String = "") {
+    }
+    
+    func messageToClass(message: String) where Self: Hashable {
+    }
 }
 
 // Presentable 프로토콜을 통해 LoggedOutViewController를 연결 해 준다.
 // LoggedOutViewController에서 이벤트가 발생하면 Presentable 프로토콜을 통해 Interactor에게 전달한다.
+// 뷰컨에서 인터랙터로 전달이 필요할 때 Presentable 채택해서 정의 한다.
 protocol LoggedOutPresentable: Presentable {
     var listener: LoggedOutPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
@@ -32,7 +43,7 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
     // LoggedOutRouting 참조 변수
     weak var router: LoggedOutRouting?
     // LoggedOutListener 참조 변수
-    // 생성 시 RootInteractor를 전달 받기 때문에 RootInteractor에 호출 된다.
+    // 인터랙터 끼리 통신이 필요 한 경우에는 리스너 프로토콜을 이용 해 전달한다.
     weak var listener: LoggedOutListener?
 
     // TODO: Add additional dependencies to constructor. Do not perform any logic
